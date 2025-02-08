@@ -14,6 +14,8 @@ const QuestionComponent = ({ question, onAnswerSubmit, submitted, setSubmitted }
     setSubmitted(false); // ✅ Reset submitted state for the new question
   }, [question, setSubmitted]);
 
+
+  //handleSubmit function
   const handleSubmit = () => {
     if (selectedOption !== null && !submitted) {
       setSubmitted(true); // ✅ Use the state from App.jsx
