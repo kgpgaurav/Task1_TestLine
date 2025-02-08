@@ -46,7 +46,7 @@ const App = () => {
     <div className="">
     <div className="bg-yellow-100 flex items-center justify-center h-screen bg-gray-100">
       <div className="shadow-gray-800 bg-yellow-50 p-6 rounded-lg shadow-lg w-96">
-        {!quizStarted ? ( // ✅ Show start button before quiz begins
+        {!quizStarted ? ( // Show start button before quiz begins
           <div className="text-center">
             <h2 className="text-xl font-bold">Welcome to the Quiz!</h2>
             <button 
@@ -69,12 +69,6 @@ const App = () => {
               onAnswerSubmit={handleAnswerSubmit}
               submitted={submitted}
               setSubmitted={setSubmitted}
-              //<QuestionComponent 
-//   question={questions[currentQuestion]} 
-//   onAnswerSubmit={handleAnswerSubmit}
-//   submitted={submitted}
-//   setSubmitted={setSubmitted} // ✅ Pass setSubmitted to reset it when moving to the next question
-// />
 
             />
             <button 
