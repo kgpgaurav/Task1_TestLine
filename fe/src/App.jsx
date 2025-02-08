@@ -9,7 +9,7 @@ const App = () => {
   const [quizCompleted, setQuizCompleted] = useState(false);
   const [answeredQuestions, setAnsweredQuestions] = useState(new Set());
   const [submitted, setSubmitted] = useState(false);
-  const [quizStarted, setQuizStarted] = useState(false); // ✅ State to track if quiz has started
+  const [quizStarted, setQuizStarted] = useState(false); // State to track if quiz has started
 
   useEffect(() => {
     (async () => {
@@ -44,7 +44,7 @@ const App = () => {
 
   return (
     <div className="">
-    <div className="bg-yellow-100 flex items-center justify-center h-screen bg-gray-100">
+    <div className="bg-yellow-200 flex items-center justify-center h-screen">
       <div className="shadow-gray-800 bg-yellow-50 p-6 rounded-lg shadow-lg w-96">
         {!quizStarted ? ( // Show start button before quiz begins
           <div className="text-center">
