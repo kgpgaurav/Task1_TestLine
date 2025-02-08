@@ -17,9 +17,7 @@ app.use(cors());
 app.use(express.json());
 
 //app.get
-app.get('/', (req, res) => {
-  res.send('Home Page');
-});
+
 
 app.get('/quiz', async (req, res) => {
   try {
